@@ -2,6 +2,7 @@
 if [ ! -f tele_agenda.txt ] ; then
 	touch tele_agenda.txt
 fi
+PS3="Votre choix ? : "
 select i in " Ajouter une nouvelle fiche ." " Rechercher une fiche ." " Détruire une fiche ." " Modifier une fiche ." " Lister l'annaire ." " Fin ." ; do
 	case $REPLY in
 		1) read -p " Nom : " name ; read -p " Numéro Téléphone : " phone
